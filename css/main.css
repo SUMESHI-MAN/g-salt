@@ -1,0 +1,416 @@
+html {
+    background: #545454;
+    /*    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%); */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --ページ全体設定-- */
+
+body {
+    background: linear-gradient(#A9E2F3, #0B0B61);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #0000FF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    /*    max-width: 1000px;*/
+    padding: 2em 2em 4em;
+}
+
+/* --ページ全体設定-- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #0f0f0f;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a {
+    color: #0083e8;
+}
+
+p {
+    color: #fff;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+
+/* --タブボックス設定-- */
+
+p.tabs {
+    margin: 0px;
+    padding: 0px;
+}
+
+p.tabs a {
+    /* ▼(B-2)リンクをタブのように見せる */
+    display: block;
+    width: 6.7em;
+    float: left;
+    margin: 0px 1px 0px 0px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 12px 12px 0px 0px;
+    border: none;
+    /* 角を丸くする */
+}
+
+
+/* --タブボックス配色-- */
+
+p.tabs a.tab1 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab2 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab3 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab4 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab5 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab6 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a.tab7 {
+    background-color: #D8D8D8;
+    color: black;
+}
+
+p.tabs a:hover {
+    color: yellow;
+}
+
+/* --タブボックス配色-- */
+
+/* --釣果画像サイズ-- */
+
+#resultTable img {
+    max-width: auto;
+    height: 11em;
+}
+
+/* --釣果画像サイズ-- */
+
+/* --タブボックス設定-- */
+
+div.tab {
+    /* --ボックス共通装飾-- */
+    width: 100%;
+    margin-top: -1px;
+    overflow: auto;
+    clear: left;
+}
+
+div#tab1 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab2 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab3 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab4 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab5 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab6 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div#tab7 {
+    width: 99.5%;
+    margin-top: -1px;
+    border: 1px solid #D8D8D8;
+}
+
+div.tab p {
+    margin: 0.5em;
+}
+
+/* --タブボックス設定-- */
+
+/* --スライドショー-- */
+
+#slideshow {
+    position: relative;
+    width: 700px;
+    /* 画像の横幅に合わせて記述 */
+    height: 155px;
+    /* 画像の高さに合わせて記述 */
+}
+
+#slideshow img {
+    position: absolute;
+    top: 255px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin: auto;
+    z-index: 8;
+    opacity: 0.0;
+
+    max-width: 95%
+}
+
+#slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+
+#slideshow img.last-active {
+    z-index: 9;
+}
+
+/* --スライドショー-- */
+
+/* --釣果画像-- */
+#tab4 ul.thumbnail {
+    list-style-type: none;
+}
+
+#tab4 ul.thumbnail li {
+    float: left;
+    margin: 0 4px 4px 0;
+}
+
+#tab4 ul.thumbnail li img {
+    width:auto;
+    height:auto;
+    max-width:120px;
+    max-height:150px;
+    vertical-align: middle;/*IE7*/
+}
+
+#tab4 ul.thumbnail li a {
+    display: block;
+}
+
+/* --tab5 setting-- */
+/* recruit */
+#tab5 table.recruit {
+    color: rgb(255, 240, 245);
+    padding: 5px 0px 0px 5px;
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    width: 200px;
+    font-size: 15px;
+    table-layout: fixed;
+    /* 影 */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+ 
+#tab5 table.recruit th {
+    width: 150px;
+    min-height: 13px;
+    padding:13px 20px 5px 25px;
+    text-justify: inter-ideograph;
+    vertical-align: top;
+    border: none;
+    white-space: nowrap;
+    overflow: visible;
+}
+ 
+#tab5 table.recruit th::after {
+    float: right;
+    padding: 0;
+    right: -15px;
+    top: 0;
+    /*content: "───";*/
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: none;
+}
+ 
+#tab5 table.recruit td {
+    height: 12px;
+    width:450px;
+    margin: 0;
+    padding: 10px 10px 10px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 180%;
+}
+
+
+/* --tab7 setting-- */
+/* recruit */
+#tab7 table.recruit {
+    color: rgb(255, 240, 245);
+    font-size: 15px;
+    padding: 5px 0px 0px 5px;
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    width: 300px;
+    font-size: 13px;
+    table-layout: fixed;
+    /* 影 */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+ 
+#tab7 table.recruit th {
+    width: 100px;
+    min-height: 13px;
+    padding: 10px 20px 5px 0;
+    text-justify: inter-ideograph;
+    vertical-align: top;
+    border: none;
+    white-space: nowrap;
+    overflow: visible;
+}
+ 
+#tab7 table.recruit th::after {
+    float: right;
+    padding: 0;
+    right: -15px;
+    top: 0;
+    /*content: "───";*/
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: none;
+}
+ 
+#tab7 table.recruit td {
+    height: 12px;
+    width:600px;
+    margin: 0;
+    padding: 10px 10px 10px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 180%;
+}
+
+
+
+
+
+
+#tab6 table.recruit {
+    color: rgb(255, 240, 245);
+    padding: 5px 0px 0px 5px;
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    width: 1000px;
+    font-size: 20px;
+    table-layout: fixed;
+    /* 影 */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+ 
+#tab6 table.recruit tr {
+    height: 12px;
+    width:600px;
+    margin: 10;
+    padding: 10px 10px 10px 0px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    line-height: 180%;
+}
+ 
+#tab6 table.recruit td {
+    height: 12px;
+    width:600px;
+    margin: 10;
+    padding: 10px 10px 10px 0px;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    line-height: 180%;
+}
+
+#tab6 table.recruit td.sub {
+font-size: 15px;
+}
+
+#tab6 table.recruit a {
+    color: rgb(255, 240, 245);
+}
+
+
